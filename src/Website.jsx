@@ -143,7 +143,7 @@ const BookingModal = ({ isOpen, onClose, title = "Schedule Your Session" }) => {
   const handleEmailRequest = () => {
     const subject = encodeURIComponent(`Booking Request: ${title}`);
     const body = encodeURIComponent(`Hi Berel Team,\n\nI'd like to book: ${title}.\n\n--- Details ---\nName:\nCompany:\nTimezone:\n`);
-    window.location.href = `mailto:info@berelagents.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:berel.agents@gmail.com?subject=${subject}&body=${body}`;
   };
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center px-4 animate-in fade-in duration-200">
@@ -199,7 +199,7 @@ const AboutModal = ({ isOpen, onClose }) => {
         <div className="space-y-6 text-slate-300 leading-relaxed">
           <p className="text-lg font-light">We are the world's first <strong>Agentic Engineering Consultant</strong>.</p>
           <div className="bg-slate-800/50 p-6 rounded-xl border border-slate-700"><h3 className="text-white font-bold mb-2 flex items-center gap-2"><Users className="w-5 h-5 text-violet-400" /> The Founder Story</h3><p className="text-sm text-slate-400">Built by an aerospace engineer and PhD Candidate specializing in CFD and turbulence modeling in Hamburg, Germany. After years of analyzing XV-15 tiltrotors, Berel was born to encode expert engineering judgment into AI systems.</p></div>
-          <p>Our mission is to solve the engineering capacity crisis. By combining specialized AI agent swarms with human verification, we deliver professional-grade analysis 20x faster than traditional firms.</p>
+          <p>Our mission is to solve the engineering capacity crisis by combining specialized AI agentic engineering swarms with human verification. We deliver professional-grade insights 20x faster than traditional consultation firms.</p>
         </div>
       </div>
     </div>
@@ -267,9 +267,8 @@ const Header = ({ onBookClick }) => {
 
   const navLinks = [
     { name: 'Why Berel', href: 'value-prop' },
-    { name: 'Who We Serve', href: 'who-we-serve' },
+    { name: 'Workflow', href: 'workflow' },
     { name: 'Use Cases', href: 'use-cases' },
-    { name: 'Capabilities', href: 'capabilities' },
     { name: 'Process', href: 'how-it-works' },
   ];
 
@@ -325,9 +324,9 @@ const Footer = ({ onOpenAbout, onOpenMethod, onOpenBlog }) => (
             <h2 className="text-[24px] font-bold text-slate-100" style={{ fontFamily: "'Outfit', sans-serif" }}>Berel Agents</h2>
             <h2 className="text-[23px] font-bold text-slate-100" style={{ fontFamily: "'Outfit', sans-serif" }}>& Co.</h2>
           </div>
-          <p className="mb-8 max-w-md text-slate-500 leading-relaxed">The world’s first Agentic Engineering Consultant – AI-powered specialist teams with human-reviewed quality for aerospace and mechanical engineering.</p>
+          <p className="mb-8 max-w-md text-slate-500 leading-relaxed">The world’s first Agentic Engineering Consultant: AI-powered specialist teams with human-reviewed quality for aerospace, automotive & mechanical engineering teams.</p>
           <div className="flex gap-4">
-            {['Twitter', 'LinkedIn', 'GitHub'].map((social) => (
+            {['LinkedIn', 'GitHub'].map((social) => (
               <a key={social} href="#" className="p-2 bg-slate-900 rounded-lg hover:bg-slate-800 hover:text-cyan-400 transition-all">{social}</a>
             ))}
           </div>
@@ -344,8 +343,8 @@ const Footer = ({ onOpenAbout, onOpenMethod, onOpenBlog }) => (
         <div>
           <h4 className="text-white font-bold mb-6 tracking-wide" style={{ fontFamily: "'Outfit', sans-serif" }}>Contact</h4>
           <ul className="space-y-3">
-            <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-slate-500" /> info@berelagents.com</li>
-            <li className="flex items-center gap-2"><Settings className="w-4 h-4 text-slate-500" /> Hamburg, DE</li>
+            <li className="flex items-center gap-2"><Mail className="w-4 h-4 text-slate-500" /> berel.agents@gmail.com</li>
+            <li className="flex items-center gap-2"><Settings className="w-4 h-4 text-slate-500" /> Goa, IN/ Hamburg, DE</li>
             <li className="pt-6 text-sm text-slate-600">© 2025 Berel Agents & Co.</li>
           </ul>
         </div>
