@@ -405,7 +405,7 @@ export default function App() {
           
           <FadeIn delay={0.2}>
             <p className="text-xl text-slate-400 mb-12 max-w-3xl leading-relaxed font-light">
-              The world’s first Agentic Engineering Consultant – AI-powered specialist teams with human-reviewed quality for aerospace and mechanical engineering.
+              The world’s first Agentic Engineering Consultant: AI-powered specialist teams with human-reviewed quality for aerospace, automotive and mechanical engineering teams.
             </p>
             <div className="flex flex-col sm:flex-row gap-5">
               <Button primary onClick={() => openBooking("Start Your Free Pilot")}>Start Your Free Pilot</Button>
@@ -415,9 +415,9 @@ export default function App() {
               }}>View Plans</Button>
             </div>
             <div className="mt-10 flex items-center gap-6 text-sm text-slate-500 font-medium">
-              <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-500" /> 30-min Strategy Session</span>
+              <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-500" /> 20-min Strategy Session</span>
               <span className="w-1 h-1 bg-slate-700 rounded-full"></span>
-              <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-500" /> No Commitment</span>
+              <span className="flex items-center gap-2"><CheckCircle className="w-4 h-4 text-violet-500" /> No Initial Commitment</span>
             </div>
           </FadeIn>
         </div>
@@ -456,14 +456,14 @@ export default function App() {
               </div>
 
               <h3 className="text-2xl font-bold text-white mb-6 relative z-10" style={{ fontFamily: "'Outfit', sans-serif" }}>The Alternative</h3>
-              <p className="text-xl text-cyan-300 font-medium mb-10 relative z-10">What if a specialized team of AI engineering agents could handle 80% of this—in 48 hours?</p>
+              <p className="text-xl text-cyan-300 font-medium mb-10 relative z-10">What if a specialized team of AI engineering agents could handle 80% of this—in 48-72 hours?</p>
               <div className="space-y-8 relative z-10">
                 <div>
-                    <div className="flex justify-between text-sm text-slate-500 mb-2 font-medium"><span>Traditional (8-12 Weeks)</span></div>
+                    <div className="flex justify-between text-sm text-slate-500 mb-2 font-medium"><span>Traditional (8-12+ Weeks)</span></div>
                     <div className="h-3 bg-slate-800 rounded-full overflow-hidden border border-slate-700/50"><div className="h-full w-[15%] bg-red-500/50 rounded-full"></div></div>
                 </div>
                 <div>
-                    <div className="flex justify-between text-sm text-cyan-400 font-medium mb-2"><span>Berel Agents (48 Hours)</span></div>
+                    <div className="flex justify-between text-sm text-cyan-400 font-medium mb-2"><span>Berel Agents (48-72 Hours)</span></div>
                     <div className="h-3 bg-slate-800 rounded-full overflow-hidden border border-slate-700/50 relative">
                       <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-cyan-400 w-[95%] rounded-full shadow-[0_0_15px_rgba(6,182,212,0.5)]"></div>
                     </div>
@@ -478,17 +478,17 @@ export default function App() {
       <Section id="how-it-works">
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6" style={{ fontFamily: "'Outfit', sans-serif" }}>Meet Your Agentic Engineering Desk</h2>
-          <p className="text-lg text-slate-400 max-w-3xl mx-auto">A specialized AI team that functions as your in-house engineering consultancy. <span className="text-violet-400 font-medium">Not a chatbot. A coordinated expert system.</span></p>
+          <p className="text-lg text-slate-400 max-w-3xl mx-auto">A specialized Agentic team of Engineers that functions as your in-house engineering consultancy. <span className="text-violet-400 font-medium">Not a chatbot. A coordinated expert system.</span></p>
         </div>
 
         <div className="relative mb-32">
           <div className="hidden md:block absolute top-1/2 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-700 to-transparent -z-10 transform -translate-y-1/2"></div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { step: "01", title: "Discovery", icon: Settings, desc: "You share your project brief, requirements, constraints, and any reference documents. We configure your custom agent team based on your processes and standards." },
-              { step: "02", title: "Deployment", icon: Users, desc: "Your specialized agents (Research, Aero, Structures, Manufacturing, QA) get to work, analyzing seamlessly in parallel with cross-domain context." },
-              { step: "03", title: "Synthesize", icon: Zap, desc: "Receive a comprehensive 40-60 page consultation package: executive summary, technical analysis, risk register, cost estimates, and actionable next steps." },
-              { step: "04", title: "Learning", icon: Cpu, desc: "Your agents learn from every project. Provide feedback, and they encode your company's expertise, preferences, and standards—getting smarter with each consultation." }
+              { step: "01", title: "Discovery", icon: Settings, desc: "You share your project brief, requirements, constraints, and any reference documents. We configure your custom agent team based on your processes, huristics and standards." },
+              { step: "02", title: "Deployment", icon: Users, desc: "Your specialized agents (Research, Aerodynamics, Structures, Manufacturing, QA, SCM, More) get to work, analyzing seamlessly in parallel with cross-domain context." },
+              { step: "03", title: "Synthesize", icon: Zap, desc: "Receive a comprehensive 20-40 page consultation package: executive summary, technical analysis, risk register, cost estimates, actionable next steps, among other key insights." },
+              { step: "04", title: "Learning", icon: Cpu, desc: "Your agents learn from every project. Provide feedback through online summary sessions, and they encode your company's expertise, preferences, and standards—getting smarter with each consultation." }
             ].map((item, idx) => (
               <FadeIn key={idx} delay={idx * 0.1} className="h-full">
                 <GlassCard className="h-full p-6 !bg-slate-950/80 flex flex-col">
@@ -507,8 +507,8 @@ export default function App() {
         <div className="mt-24 text-center mb-12"><h3 className="text-2xl font-bold text-white mb-3" style={{ fontFamily: "'Outfit', sans-serif" }}>Your Specialized Agent Team</h3></div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { name: "Research Agent", icon: FileText, tagline: "Standards & Intelligence", desc: "Conducts targeted literature reviews & regulatory compliance checks (FAA/EASA)." },
-              { name: "Aerodynamics Agent", icon: Wind, tagline: "Performance & CFD", desc: "Performs preliminary sizing (Raymer methods) and drag breakdown estimation." },
+              { name: "Research Agent", icon: FileText, tagline: "Standards & Intelligence", desc: "Conducts targeted literature reviews & regulatory compliance checks." },
+              { name: "Aerodynamics Agent", icon: Wind, tagline: "Performance & CFD", desc: "Performs preliminary sizing, design optimisation pointers and drag breakdown estimation." },
               { name: "Structural Agent", icon: Anchor, tagline: "Load Analysis", desc: "Identifies critical load cases and performs preliminary structural sizing & material selection." },
               { name: "Manufacturing Agent", icon: Settings, tagline: "DFM & Cost", desc: "Assesses manufacturability, recommends processes, and builds ROM cost models." },
               { name: "QA Agent", icon: Shield, tagline: "Certification", desc: "Maps certification pathways and develops quality control inspection plans." },
@@ -531,7 +531,7 @@ export default function App() {
       <Section id="use-cases" className="bg-slate-900">
         <div className="text-center mb-20">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4" style={{ fontFamily: "'Outfit', sans-serif" }}>Perfect for These Challenges</h2>
-          <p className="text-lg text-slate-400">Real scenarios where Berel Agents accelerate capacity.</p>
+          <p className="text-lg text-slate-400">Real scenarios where Berel Agents accelerate capacity</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {[
@@ -568,7 +568,7 @@ export default function App() {
           <FadeIn className="h-full">
             <GlassCard className="h-full flex flex-col border-t-4 border-t-slate-700 pt-8">
               <div className="mb-6"><span className="text-slate-400 font-medium">Starter</span><div className="mt-2 flex items-baseline gap-1"><span className="text-4xl font-bold text-white">€1,500</span><span className="text-slate-500">/mo</span></div></div>
-              <ul className="space-y-4 mb-8 flex-1 text-sm text-slate-300">{["20 Consultations/mo", "All 6 Agents", "48-72h Turnaround", "PDF Outputs"].map(f => <li key={f} className="flex gap-3"><CheckCircle className="w-5 h-5 text-slate-600" /> {f}</li>)}</ul>
+              <ul className="space-y-4 mb-8 flex-1 text-sm text-slate-300">{["10 Consultations/mo", "Core 6 Agent team", "72h Turnaround", "2/mo live summary sessions"].map(f => <li key={f} className="flex gap-3"><CheckCircle className="w-5 h-5 text-slate-600" /> {f}</li>)}</ul>
               <Button className="w-full justify-center" onClick={() => openPayment('Starter Plan', '€1,500')}>Start Pilot</Button>
             </GlassCard>
           </FadeIn>
@@ -579,7 +579,7 @@ export default function App() {
               <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-violet-500 to-cyan-500"></div>
               <div className="absolute top-4 right-4 px-3 py-1 bg-violet-500/20 border border-violet-500/30 rounded-full text-xs text-violet-300 font-bold uppercase tracking-wider">Most Popular</div>
               <div className="mb-6"><span className="text-violet-400 font-medium">Professional</span><div className="mt-2 flex items-baseline gap-1"><span className="text-4xl font-bold text-white">€2,500</span><span className="text-slate-500">/mo</span></div></div>
-              <ul className="space-y-4 mb-8 flex-1 text-sm text-slate-300">{["Unlimited Consultations", "Priority (24h)", "Custom Config", "Slack Channel"].map(f => <li key={f} className="flex gap-3"><CheckCircle className="w-5 h-5 text-violet-400" /> {f}</li>)}</ul>
+              <ul className="space-y-4 mb-8 flex-1 text-sm text-slate-300">{[" 25 Consultations/mo", "48h Turnaround", "Priority (24h) Customer support", "Custom Agentic team Config", "Slack Channel"].map(f => <li key={f} className="flex gap-3"><CheckCircle className="w-5 h-5 text-violet-400" /> {f}</li>)}</ul>
               <Button primary className="w-full justify-center" onClick={() => openPayment('Professional Plan', '€2,500')}>Get Started</Button>
             </GlassCard>
           </FadeIn>
@@ -600,9 +600,9 @@ export default function App() {
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold text-white mb-12 text-center" style={{ fontFamily: "'Outfit', sans-serif" }}>Frequently Asked Questions</h2>
           {[
-            { q: "How is this different from ChatGPT?", a: "Generic LLMs are generalists. Berel Agents are specialists with encoded aerospace expertise (Raymer, Nicolai), working as a coordinated team (Aero → Structures → Mfg) to ensure cross-domain consistency." },
+            { q: "How is this different from ChatGPT?", a: "Generic LLMs are generalists. Berel Agents are specialists with encoded aerospace expertise, working as a coordinated team (Aero → Structures → Mfg,etc.) to ensure cross-domain consistency." },
             { q: "Can agents replace senior engineers?", a: "No. We handle the 70% systematic work. Your seniors focus on novel design and judgment." },
-            { q: "Data security?", a: "Encrypted transit/rest. SOC 2 Type II. On-premise options available." },
+            { q: "Data security?", a: "Encrypted transit/rest. SOC 2 Type II. On-premise/ device." },
              { q: "What about technical errors?", a: "We use a three-layer safety system: Multi-agent validation, confidence scoring, and Human-in-the-loop training." }
           ].map((item, i) => <AccordionItem key={i} question={item.q} answer={item.a} isOpen={openFaq === i} onClick={() => setOpenFaq(openFaq === i ? -1 : i)} />)}
         </div>
@@ -621,7 +621,7 @@ export default function App() {
             <div className="relative z-10 flex flex-col items-center gap-8">
                 <Button primary className="px-12 py-5 text-lg shadow-[0_0_50px_rgba(139,92,246,0.4)] hover:shadow-[0_0_80px_rgba(139,92,246,0.6)]" onClick={() => openBooking("Claim Free Pilot Project")}>Claim Free Pilot Project</Button>
             </div>
-            <p className="relative z-10 mt-10 text-sm text-slate-500 font-medium">Trusted by engineering teams in Germany, France, and India.</p>
+            <p className="relative z-10 mt-10 text-sm text-slate-500 font-medium">Trusted by engineering teams in Worldwide</p>
           </div>
         </FadeIn>
       </Section>
