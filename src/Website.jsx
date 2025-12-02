@@ -267,7 +267,7 @@ const Header = ({ onBookClick }) => {
 
   const navLinks = [
     { name: 'Why Berel', href: 'value-prop' },
-    { name: 'Workflow', href: 'workflow' },
+    { name: 'Pricing', href: 'pricing' },
     { name: 'Use Cases', href: 'use-cases' },
     { name: 'Process', href: 'how-it-works' },
   ];
