@@ -568,7 +568,7 @@ export default function App() {
           <FadeIn className="h-full">
             <GlassCard className="h-full flex flex-col border-t-4 border-t-slate-700 pt-8">
               <div className="mb-6"><span className="text-slate-400 font-medium">Starter</span><div className="mt-2 flex items-baseline gap-1"><span className="text-4xl font-bold text-white">€1,500</span><span className="text-slate-500">/mo</span></div></div>
-              <ul className="space-y-4 mb-8 flex-1 text-sm text-slate-300">{["10 Consultations/mo", "Core 6 Agent team", "72h Turnaround", "2/mo live summary sessions"].map(f => <li key={f} className="flex gap-3"><CheckCircle className="w-5 h-5 text-slate-600" /> {f}</li>)}</ul>
+              <ul className="space-y-4 mb-8 flex-1 text-sm text-slate-300">{["10 Consultations/mo", "Core 6 Agent team", "72h Turnaround", "Continuous Learning"].map(f => <li key={f} className="flex gap-3"><CheckCircle className="w-5 h-5 text-slate-600" /> {f}</li>)}</ul>
               <Button className="w-full justify-center" onClick={() => openPayment('Starter Plan', '€1,500')}>Start Pilot</Button>
             </GlassCard>
           </FadeIn>
@@ -579,7 +579,7 @@ export default function App() {
               <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-violet-500 to-cyan-500"></div>
               <div className="absolute top-4 right-4 px-3 py-1 bg-violet-500/20 border border-violet-500/30 rounded-full text-xs text-violet-300 font-bold uppercase tracking-wider">Most Popular</div>
               <div className="mb-6"><span className="text-violet-400 font-medium">Professional</span><div className="mt-2 flex items-baseline gap-1"><span className="text-4xl font-bold text-white">€2,500</span><span className="text-slate-500">/mo</span></div></div>
-              <ul className="space-y-4 mb-8 flex-1 text-sm text-slate-300">{[" 25 Consultations/mo", "48h Turnaround", "Priority (24h) Customer support", "Custom Agentic team Config", "Slack Channel"].map(f => <li key={f} className="flex gap-3"><CheckCircle className="w-5 h-5 text-violet-400" /> {f}</li>)}</ul>
+              <ul className="space-y-4 mb-8 flex-1 text-sm text-slate-300">{[" 25 Consultations/mo", "6+ Custom Agentic team Config", "48h Turnaround", "Continuous Learning", "Online Summary/Feedback sessions", "Priority (24h) Customer support", "Slack Channel"].map(f => <li key={f} className="flex gap-3"><CheckCircle className="w-5 h-5 text-violet-400" /> {f}</li>)}</ul>
               <Button primary className="w-full justify-center" onClick={() => openPayment('Professional Plan', '€2,500')}>Get Started</Button>
             </GlassCard>
           </FadeIn>
@@ -621,7 +621,7 @@ export default function App() {
             <div className="relative z-10 flex flex-col items-center gap-8">
                 <Button primary className="px-12 py-5 text-lg shadow-[0_0_50px_rgba(139,92,246,0.4)] hover:shadow-[0_0_80px_rgba(139,92,246,0.6)]" onClick={() => openBooking("Claim Free Pilot Project")}>Claim Free Pilot Project</Button>
             </div>
-            <p className="relative z-10 mt-10 text-sm text-slate-500 font-medium">Trusted by engineering teams in Worldwide</p>
+            <p className="relative z-10 mt-10 text-sm text-slate-500 font-medium">Trusted by Engineering Teams Worldwide</p>
           </div>
         </FadeIn>
       </Section>
